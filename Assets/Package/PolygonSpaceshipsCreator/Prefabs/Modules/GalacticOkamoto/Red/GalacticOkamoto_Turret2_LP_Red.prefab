@@ -1,0 +1,644 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6962038519076455693
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6962038519076455692}
+  m_Layer: 0
+  m_Name: GalacticOkamoto_Turret2_LP_Red
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6962038519076455692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6962038519076455693}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5455228809595969250}
+  - {fileID: 9030297321880842971}
+  - {fileID: 2742654897663886944}
+  - {fileID: 8867859219514243148}
+  - {fileID: 2728590401895501003}
+  - {fileID: 3514268976997654313}
+  - {fileID: 1452011183129608176}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &372689951225111333
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6962038519076455692}
+    m_Modifications:
+    - target: {fileID: 1227965318110174420, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6699998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.9570002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1.7763568e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000030908573
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.47114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.47114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.47114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174422, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Name
+      value: GalacticOkamoto_TurretedCannon_LP_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67f7f98702f7e7b44a281dc9e4febe2a, type: 3}
+--- !u!4 &1452011183129608176 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 372689951225111333}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &613040562177251423
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6962038519076455692}
+    m_Modifications:
+    - target: {fileID: 949388371427099766, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6143965227888721889, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+        type: 3}
+      propertyPath: m_Name
+      value: GalacticOkamoto_Cylinder_LP_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b4828b9f5b00d7c4080b73efd3d052a3, type: 3}
+--- !u!4 &5455228809595969250 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4842821606148064957, guid: b4828b9f5b00d7c4080b73efd3d052a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 613040562177251423}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1302185167020160711
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6962038519076455692}
+    m_Modifications:
+    - target: {fileID: 688212180767565027, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_Name
+      value: GalacticOkamoto_Turret_LP_Red
+      objectReference: {fileID: 0}
+    - target: {fileID: 2685289498629083273, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.45999998
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 9e9de4b21423d194283157b3fdfaf57e, type: 3}
+--- !u!4 &2728590401895501003 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4021622112870562316, guid: 9e9de4b21423d194283157b3fdfaf57e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1302185167020160711}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2436353873437918204
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6962038519076455692}
+    m_Modifications:
+    - target: {fileID: 1227965318110174420, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.2000046
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.6699998
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.9570002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1.7763568e-15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000030908573
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.70710576
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.70710784
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.47114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.47114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.47114
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174422, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Name
+      value: GalacticOkamoto_TurretedCannon_LP_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67f7f98702f7e7b44a281dc9e4febe2a, type: 3}
+--- !u!4 &3514268976997654313 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 2436353873437918204}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3964651919414729397
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6962038519076455692}
+    m_Modifications:
+    - target: {fileID: 1227965318110174420, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.3800001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000001545431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000001545431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174422, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Name
+      value: GalacticOkamoto_TurretedCannon_LP_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67f7f98702f7e7b44a281dc9e4febe2a, type: 3}
+--- !u!4 &2742654897663886944 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 3964651919414729397}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7645543209533531289
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6962038519076455692}
+    m_Modifications:
+    - target: {fileID: 1227965318110174420, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.199997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.3800001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000001545431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000001545431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174422, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Name
+      value: GalacticOkamoto_TurretedCannon_LP_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67f7f98702f7e7b44a281dc9e4febe2a, type: 3}
+--- !u!4 &8867859219514243148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7645543209533531289}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7807153105638436366
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6962038519076455692}
+    m_Modifications:
+    - target: {fileID: 1227965318110174420, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 00eaf01308024044aaffab04875e1397, type: 2}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.1000061
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.3800001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000001545431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000001545431
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1227965318110174422, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+        type: 3}
+      propertyPath: m_Name
+      value: GalacticOkamoto_TurretedCannon_LP_Red
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 67f7f98702f7e7b44a281dc9e4febe2a, type: 3}
+--- !u!4 &9030297321880842971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1227965318110174421, guid: 67f7f98702f7e7b44a281dc9e4febe2a,
+    type: 3}
+  m_PrefabInstance: {fileID: 7807153105638436366}
+  m_PrefabAsset: {fileID: 0}
