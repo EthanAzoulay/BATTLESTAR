@@ -17,7 +17,7 @@ PrefabInstance:
     - target: {fileID: 3272268818090967721, guid: 3bea0b512dc0e2649a2777a2f99abae0,
         type: 3}
       propertyPath: m_Name
-      value: Buy_Butterfly
+      value: Buy_TripleReactor
       objectReference: {fileID: 0}
     - target: {fileID: 7137661925559984096, guid: 3bea0b512dc0e2649a2777a2f99abae0,
         type: 3}
@@ -76,7 +76,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3272268818090967721, guid: 3bea0b512dc0e2649a2777a2f99abae0,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8004177257766267925}
+      addedObject: {fileID: 1557309425070634686}
   m_SourcePrefab: {fileID: 100100000, guid: 3bea0b512dc0e2649a2777a2f99abae0, type: 3}
 --- !u!1 &2198396456733302034 stripped
 GameObject:
@@ -84,7 +84,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 3741130958656937915}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8004177257766267925
+--- !u!114 &1557309425070634686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 2198396456733302034}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b49818a6d4346148898ad4f072128fb, type: 3}
+  m_Script: {fileID: 11500000, guid: deea63a2cc16b2444b308227a2027166, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  butterfly: {fileID: 11400000, guid: cf2b53505ecadce4a9234d616cfd4dc5, type: 2}
+  reactor: {fileID: 11400000, guid: afd66175898615c409422182d52dde1b, type: 2}
   _itemManager: {fileID: 11400000, guid: 4830cd44546637740b67c07e2ec7b79b, type: 2}

@@ -16,22 +16,32 @@ public class Game_Manager : MonoBehaviour
     private const string AsteroidSpawnProbabilityKey = "AsteroidSpawnProbability";
     private float asteroidSpawnProbabilityIncrease = 0f;
 
+    [SerializeField]
+    private SOItemManager _itemManager;
+
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
             DontDestroyOnLoad(gameObject);
-            LoadCoins();
-            LoadPurchasedItems();
-            LoadDestroyedItems();
-            LoadDestroyedAsteroids();
-            LoadAsteroidSpawnProbabilityIncrease();
+            LoadGameData();
         }
         else
         {
             Destroy(gameObject);
         }
+    }
+
+
+
+    private void LoadGameData()
+    {
+        LoadCoins();
+        LoadPurchasedItems();
+        LoadDestroyedItems();
+        LoadDestroyedAsteroids();
+        LoadAsteroidSpawnProbabilityIncrease();
     }
 
     private void LoadAsteroidSpawnProbabilityIncrease()
@@ -167,13 +177,19 @@ public class Game_Manager : MonoBehaviour
             asteroidPrefab.ResetSpeed();
         }
 
-        // Trouver le Player et réinitialiser ses ScriptableObjects
-        PlayerMovement player = FindObjectOfType<PlayerMovement>();
-        if (player != null)
+        if (_itemManager != null)
         {
-            player.ResetToDefault();
+            _itemManager.ResetInstance();
+        }
+
+        // Récupérer le joueur et appeler ResetToDefault
+        PlayerMovement playerMovement = FindObjectOfType<PlayerMovement>();
+        if (playerMovement != null)
+        {
+            playerMovement.ResetToDefault();
         }
     }
+
 
     public bool HasNewRoundStarted()
     {

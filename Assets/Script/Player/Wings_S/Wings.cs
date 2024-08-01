@@ -9,5 +9,4 @@ public class Wings : ScriptableObject
     public float speed;
     public float rotationSpeed;
     public float fireRate;
-
 }

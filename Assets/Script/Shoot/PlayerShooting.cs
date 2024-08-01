@@ -69,14 +69,7 @@ public class PlayerShooting : MonoBehaviour
     {
         targetAsteroid = asteroidTransform;
 
-        if (asteroidTransform != null)
-        {
-            Debug.Log("Target asteroid set to: " + asteroidTransform.name);
-        }
-        else
-        {
-            Debug.Log("No asteroid target.");
-        }
+      
     }
 
     void Shoot()

@@ -22,15 +22,8 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public float verticalInput;
 
-    // Référence au ScriptableObject Wings
-    public Wings wings;
-
-    // Référence au ScriptableObject Reactor
-    public Reactor reactor;
-
-    //// Références aux valeurs par défaut des ScriptableObjects
-    private Wings defaultWings;
-    private Reactor defaultReactor;
+    [SerializeField]
+    SOItemManager _itemManager;
 
     void Start()
     {
@@ -50,20 +43,22 @@ public class PlayerMovement : MonoBehaviour
             Debug.LogError("Shooter object is not assigned.");
         }
 
-        //// Stocker les valeurs par défaut des ScriptableObjects
-        defaultWings = wings;
-        defaultReactor = reactor;
 
+        ReinitialisedUpgrades();
         ApplyWings();
         ApplyReactor();
-        ApplyUpgrades();
+
     }
 
     void FixedUpdate()
     {
         // Joystick Entry
-        horizontalInput = joystick.Horizontal * sensitivity;
-        verticalInput = joystick.Vertical * sensitivity;
+        if (joystick != null)
+        {
+            horizontalInput = joystick.Horizontal * sensitivity;
+            verticalInput = joystick.Vertical * sensitivity;
+        }
+
 
         Debug.Log("Horizontal Joystick: " + horizontalInput + ", Vertical Joystick: " + verticalInput);
 
@@ -126,61 +121,61 @@ public class PlayerMovement : MonoBehaviour
 
     public void ApplyWings()
     {
+        Wings wings = _itemManager.Instance.wings;
+
         if (wings != null && wings.model != null)
         {
             GameObject wingsInstance = Instantiate(wings.model, transform);
             wingsInstance.transform.localPosition = wings.model.transform.localPosition;
             wingsInstance.transform.localRotation = wings.model.transform.localRotation;
+            speed += wings.speed;
+            rotationSpeed += wings.rotationSpeed;
         }
     }
 
     public void ApplyReactor()
     {
+        Reactor reactor = _itemManager.Instance.reactor;
+
+
         if (reactor != null && reactor.model != null)
         {
             GameObject reactorInstance = Instantiate(reactor.model, transform);
             reactorInstance.transform.localPosition = reactor.model.transform.localPosition;
             reactorInstance.transform.localRotation = reactor.model.transform.localRotation;
+            speed += reactor.speed;
+            rotationSpeed += reactor.rotationSpeed;
         }
     }
 
-    public void ApplyUpgrades()
+    public void ReinitialisedUpgrades()
     {
         // Réinitialiser les valeurs de base avant d'appliquer les améliorations
         speed = 0f; // Valeur de base de la vitesse, ajustez cette valeur selon vos besoins
         rotationSpeed = 0f; // Valeur de base de la vitesse de rotation, ajustez cette valeur selon vos besoins
 
-        // Appliquer les améliorations des wings
-        if (wings != null)
-        {
-            speed += wings.speed;
-            rotationSpeed += wings.rotationSpeed;
-        }
 
-        // Appliquer les améliorations du reactor
-        if (reactor != null)
-        {
-            speed += reactor.speed;
-            rotationSpeed += reactor.rotationSpeed;
+        // Appliquer l'amélioration de la cadence de tir si playerShooting est défini
+        //if (playerShooting != null)
+        //{
+        //    playerShooting.fireRate = playerShooting.baseFireRate + reactor.fireRate;
+        //}
 
-            // Appliquer l'amélioration de la cadence de tir si playerShooting est défini
-            //if (playerShooting != null)
-            //{
-            //    playerShooting.fireRate = playerShooting.baseFireRate + reactor.fireRate;
-            //}
-        }
     }
 
 
-    //Méthode pour réinitialiser les ScriptableObjects aux valeurs par défaut
     public void ResetToDefault()
     {
-        wings = defaultWings;
-        reactor = defaultReactor;
+        if (_itemManager != null)
+        {
+            // Réinitialiser les instances de l'item manager
+            _itemManager.ResetInstance();
 
-        // Réappliquer les valeurs par défaut
-        ApplyWings();
-        ApplyReactor();
-        ApplyUpgrades();
+            //// Appliquer les valeurs par défaut
+            //ReinitialisedUpgrades();
+            //ApplyWings();
+            //ApplyReactor();
+        }
     }
+
 }

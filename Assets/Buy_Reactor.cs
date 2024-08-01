@@ -1,24 +1,24 @@
 using UnityEngine;
 
-public class Buy_Butterfly : MonoBehaviour
+public class Buy_Reactor : MonoBehaviour
 {
     // Référence au ScriptableObject Butterfly
-    public Wings butterfly;
+    public Reactor reactor;
 
-   
+
     [SerializeField]
     private SOItemManager _itemManager;
 
-   
+
 
     void OnMouseDown()
     {
-        if (butterfly != null)
+        if (reactor != null)
         {
             // Assigner le ScriptableObject Butterfly à la référence Wings du script PlayerMovement
-            _itemManager.Instance.wings = butterfly;
+            _itemManager.Instance.reactor = reactor;
 
-           
+
 
             Debug.Log("Butterfly wings have been assigned to the player.");
         }

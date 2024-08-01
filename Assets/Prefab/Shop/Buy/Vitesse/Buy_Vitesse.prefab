@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 1526820290467880908, guid: 7d8290a12d4bc59498be18ff6442c279,
         type: 3}
       propertyPath: m_Name
-      value: Buy_Vitesse Variant
+      value: Buy_Vitesse
       objectReference: {fileID: 0}
     - target: {fileID: 6581769399470998149, guid: 7d8290a12d4bc59498be18ff6442c279,
         type: 3}
@@ -66,9 +66,16 @@ PrefabInstance:
     - target: {fileID: 8158120385301839879, guid: 7d8290a12d4bc59498be18ff6442c279,
         type: 3}
       propertyPath: itemName
-      value: Vitesse
+      value: Cannon
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8158120385301839879, guid: 7d8290a12d4bc59498be18ff6442c279,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3001308326569723169, guid: 7d8290a12d4bc59498be18ff6442c279, type: 3}
+    - {fileID: 8158120385301839879, guid: 7d8290a12d4bc59498be18ff6442c279, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
