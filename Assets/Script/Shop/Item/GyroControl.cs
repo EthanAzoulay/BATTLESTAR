@@ -5,6 +5,9 @@ public class GyroControl : MonoBehaviour
     private bool gyroEnabled;
     private Gyroscope gyro;
 
+    // Rotation de correction initiale pour ajuster l'orientation
+    private Quaternion correctionQuaternion;
+
     // Limites de rotation pour chaque axe (en degrés)
     public float minXRotation = -45f;
     public float maxXRotation = 45f;
@@ -13,13 +16,12 @@ public class GyroControl : MonoBehaviour
     public float minZRotation = -45f;
     public float maxZRotation = 45f;
 
-    // Rotation de correction initiale
-    private Quaternion correctionQuaternion;
-
     void Start()
     {
         gyroEnabled = EnableGyro();
-        correctionQuaternion = Quaternion.Euler(90, 0, 0); // Ajustez les angles selon vos besoins
+
+        // Appliquer une correction de rotation pour aligner les axes Y et Z
+        correctionQuaternion = Quaternion.Euler(90, 0f, 0f); // Ajustez selon l'orientation de départ
     }
 
     private bool EnableGyro()
@@ -37,28 +39,34 @@ public class GyroControl : MonoBehaviour
     {
         if (gyroEnabled)
         {
+            // Convertir l'orientation du gyroscope en rotation Unity
             Quaternion gyroRotation = GyroToUnity(gyro.attitude);
-            gyroRotation = correctionQuaternion * gyroRotation; // Appliquer la rotation de correction
 
-            Vector3 euler = gyroRotation.eulerAngles;
+            // Appliquer la rotation de correction pour aligner les axes correctement
+            gyroRotation = correctionQuaternion * gyroRotation;
 
-            // Convertir les angles pour être dans la plage [-180, 180] pour une limitation correcte
-            euler.x = (euler.x > 180) ? euler.x - 360 : euler.x;
-            euler.y = (euler.y > 180) ? euler.y - 360 : euler.y;
-            euler.z = (euler.z > 180) ? euler.z - 360 : euler.z;
+            // Convertir le quaternion en angles d'Euler
+            Vector3 eulerRotation = gyroRotation.eulerAngles;
 
-            // Appliquer les limites
-            euler.x = Mathf.Clamp(euler.x, minXRotation, maxXRotation);
-            euler.y = Mathf.Clamp(euler.y, minYRotation, maxYRotation);
-            euler.z = Mathf.Clamp(euler.z, minZRotation, maxZRotation);
+            // Convertir les angles pour être dans la plage [-180, 180]
+            eulerRotation.x = (eulerRotation.x > 180) ? eulerRotation.x - 360 : eulerRotation.x;
+            eulerRotation.y = (eulerRotation.y > 180) ? eulerRotation.y - 360 : eulerRotation.y;
+            eulerRotation.z = (eulerRotation.z > 180) ? eulerRotation.z - 360 : eulerRotation.z;
 
-            // Reconvertir les angles pour l'utiliser dans Quaternion
-            transform.localRotation = Quaternion.Euler(euler);
+            // Appliquer les limites définies pour chaque axe
+            eulerRotation.x = Mathf.Clamp(eulerRotation.x, minXRotation, maxXRotation);
+            eulerRotation.y = Mathf.Clamp(eulerRotation.y, minYRotation, maxYRotation);
+            eulerRotation.z = Mathf.Clamp(eulerRotation.z, minZRotation, maxZRotation);
+
+            // Reconvertir les angles en quaternion
+            transform.localRotation = Quaternion.Euler(eulerRotation);
         }
     }
 
+    // Conversion du gyroscope à la rotation Unity avec inversion de l'axe X
     private static Quaternion GyroToUnity(Quaternion q)
     {
-        return new Quaternion(q.x, q.y, -q.z, -q.w);
+        // Inversion de l'axe X et Y pour corriger le comportement
+        return new Quaternion(q.x, q.y, -q.z, -q.w); // Ajustement pour l'axe X
     }
 }

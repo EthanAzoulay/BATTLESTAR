@@ -7,6 +7,9 @@ public class Asteroid : MonoBehaviour
     public float minScale = 0f;
     public float maxScale = 0f;
     public int coinsReward = 1; // Nombre de pièces gagnées lorsque l'astéroïde est détruit
+    public GameObject explosionParticles; // L'objet à instancier lors de la destruction de l'astéroïde
+    public GameObject vfx; // Les particules d'explosion à activer lors de la destruction
+    public float destroyDelay = 0.01f; // Temps avant la destruction du GameObject instancié
 
     private void Start()
     {
@@ -31,43 +34,34 @@ public class Asteroid : MonoBehaviour
             Game_Manager.Instance.ResetGame(); // Réinitialise les pièces et les items
 
             // Ajouter ici le code pour gérer la réinitialisation de la scène ou des éléments visuels
-            TakeDamage(1); // Applique un dégât fixe au joueur
             Destroy(other.gameObject);
         }
 
         if (other.gameObject.CompareTag("Bullet"))
         {
-            Bullet_Moving bullet = other.gameObject.GetComponent<Bullet_Moving>();
-            if (bullet != null)
-            {
-                TakeDamage(bullet.damage, true); // Applique les dégâts de la balle à l'astéroïde et indique que c'est une balle
-            }
-            Destroy(other.gameObject);
-        }
-    }
+            // Instancie un nouvel objet à la position actuelle de l'astéroïde
+            GameObject instantiatedObject = Instantiate(explosionParticles, transform.position, transform.rotation);
 
-    public void TakeDamage(int damage, bool isBullet = false)
-    {
-        health -= damage;
+            // Détruit cet objet après 5 secondes
+            Destroy(instantiatedObject, destroyDelay);
 
-        if (health <= 0)
-        {
+            // Instancie les particules d'explosion à la position de l'astéroïde
+            GameObject explosion = Instantiate(vfx, transform.position, transform.rotation);
+
+            // Détruit les particules après 5 secondes
+            Destroy(explosion, destroyDelay);
+
             // Ajouter des pièces au joueur lorsque l'astéroïde est détruit
             Game_Manager.Instance.AddCoins(coinsReward);
 
-            // Incrémente le compteur uniquement si détruit par une balle
-            if (isBullet)
-            {
-                Game_Manager.Instance.IncrementDestroyedAsteroids();
-            }
+            // Incrémente le compteur d'astéroïdes détruits
+            Game_Manager.Instance.IncrementDestroyedAsteroids();
 
-            // Détruire le parent si l'astéroïde est détruit
-            if (transform.parent != null)
-            {
-                Destroy(transform.parent.gameObject);
-            }
+            // Détruit la balle
+            Destroy(other.gameObject);
 
-            Destroy(gameObject);  // Détruit l'astéroïde quand la santé atteint 0
+            // Détruit l'astéroïde
+            Destroy(gameObject);
         }
     }
 }

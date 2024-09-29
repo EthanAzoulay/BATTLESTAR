@@ -6,7 +6,7 @@ public class Asteroid_Moving : MonoBehaviour
     public float maxSpeed = 2f;
 
     public float initialMinSpeed = 3f;
-    public  float initialMaxSpeed = 9f;
+    public float initialMaxSpeed = 9f;
 
     private Rigidbody rb;
 

@@ -18,7 +18,7 @@ public class Destroyer : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.CompareTag("Asteroid") || other.gameObject.CompareTag("Bullet"))
+        if (other.gameObject.CompareTag("Asteroid") || other.gameObject.CompareTag("Bullet") || other.gameObject.CompareTag("AsteroidExplode"))
         {
             Destroy(other.gameObject);
         }
@@ -26,7 +26,7 @@ public class Destroyer : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Asteroid") || other.gameObject.CompareTag("Bullet") || other.gameObject.CompareTag("Portal"))
+        if (other.gameObject.CompareTag("Asteroid") || other.gameObject.CompareTag("Bullet") || other.gameObject.CompareTag("Portal") || other.gameObject.CompareTag("AsteroidExplode"))
         {
             Destroy(other.gameObject);
         }

@@ -68,6 +68,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 0f3481fca58f7054da2f618aa0be4406, type: 2}
+  - {fileID: 2100000, guid: e880e4d66a1d7f747b81a522a253d02c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -154,6 +155,10 @@ MonoBehaviour:
   minScale: 0.1
   maxScale: 0.3
   coinsReward: 0
+  explosionParticles: {fileID: 6021211724460483010, guid: 8e9f2fd59b7075f4bab6eb7b0d7ff493,
+    type: 3}
+  vfx: {fileID: 249991597003715041, guid: 69ee93396fe03aa4fa84f293c657f6a5, type: 3}
+  destroyDelay: 2
 --- !u!114 &1145950121021823667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +194,7 @@ GameObject:
   - component: {fileID: 8652208361561148013}
   m_Layer: 0
   m_Name: Asteroid
-  m_TagString: Asteroid
+  m_TagString: AsteroidExplode
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

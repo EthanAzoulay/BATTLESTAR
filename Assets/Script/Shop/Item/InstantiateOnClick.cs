@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class InstantiateOnClick : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class InstantiateOnClick : MonoBehaviour
     public Vector3 instantiatePositionB;
     public Vector3 instantiatePositionC;
     public Vector3 instantiatePositionD;
+
+    // Vitesse de l'animation de scale
+    public float scalingSpeed = 1.0f; // Paramétrable via l'inspecteur Unity
 
     // Références aux instances des GameObjects
     private GameObject instanceB;
@@ -43,6 +47,9 @@ public class InstantiateOnClick : MonoBehaviour
                         instanceC = Instantiate(gameObjectC, instantiatePositionC, Quaternion.Euler(-90, 0, 0));
                         instanceD = Instantiate(gameObjectD, instantiatePositionD, Quaternion.Euler(-90, 0, 0));
 
+                        // Démarre l'animation de scale pour l'instanceB
+                        StartCoroutine(ScaleObject(instanceB, scalingSpeed));
+
                         // Ajoute le script de gestion des clics au GameObjectD
                         instanceD.AddComponent<Return>().SetInstances(instanceB, instanceC, instanceD);
 
@@ -69,6 +76,25 @@ public class InstantiateOnClick : MonoBehaviour
             }
         }
     }
+
+    // Coroutine pour animer l'apparition du GameObjectB
+    private IEnumerator ScaleObject(GameObject target, float speed)
+    {
+        Vector3 originalScale = target.transform.localScale; // Stocke l'échelle d'origine
+        target.transform.localScale = Vector3.zero; // Définit l'échelle initiale à zéro
+
+        float progress = 0f;
+
+        while (progress < 1f)
+        {
+            progress += Time.deltaTime * speed;
+            target.transform.localScale = Vector3.Lerp(Vector3.zero, originalScale, progress);
+            yield return null; // Attendre la frame suivante
+        }
+
+        // Assure que l'objet atteint exactement son échelle finale
+        target.transform.localScale = originalScale;
+    }
 }
 
 public class DestroyOnClick : MonoBehaviour
@@ -93,7 +119,7 @@ public class DestroyOnClick : MonoBehaviour
 
     void DestroyAll()
     {
-        //// Détruire les GameObjects
+        // Détruire les GameObjects
         Destroy(targetB);
         Destroy(targetC);
         Destroy(targetD);
