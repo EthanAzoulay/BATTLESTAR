@@ -16,6 +16,10 @@ public class ActivateOnTouch : MonoBehaviour
     private float targetFov; // Stocke la valeur cible du FOV
     private Vector3 originalCameraPosition; // Position originale de la caméra
 
+// Objets à desactiver
+    public GameObject targetRawImage;
+
+
     void Start()
     {
         if (mainCamera == null)
@@ -23,6 +27,7 @@ public class ActivateOnTouch : MonoBehaviour
             mainCamera = Camera.main; // Si aucune caméra n'est assignée, utiliser la caméra principale
         }
         originalCameraPosition = mainCamera.transform.localPosition; // Sauvegarder la position originale de la caméra
+
     }
 
     void Update()
@@ -48,6 +53,7 @@ public class ActivateOnTouch : MonoBehaviour
             }
         }
 
+
         // Augmentation progressive du FOV
         if (increaseFov && mainCamera.fieldOfView < targetFov)
         {
@@ -62,6 +68,8 @@ public class ActivateOnTouch : MonoBehaviour
 
     void ActivateObjects()
     {
+        targetRawImage.SetActive(false);
+
         foreach (GameObject obj in objectsToActivate)
         {
             obj.SetActive(true);
@@ -83,11 +91,11 @@ public class ActivateOnTouch : MonoBehaviour
         increaseFov = true;
 
         // Désactiver le MeshRenderer et le BoxCollider
-        MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
-        if (meshRenderer != null)
-        {
-            meshRenderer.enabled = false;
-        }
+        //MeshRenderer meshRenderer = GetComponent<MeshRenderer>();
+        //if (meshRenderer != null)
+        //{
+        //    meshRenderer.enabled = false;
+        //}
 
         BoxCollider boxCollider = GetComponent<BoxCollider>();
         if (boxCollider != null)
@@ -99,6 +107,8 @@ public class ActivateOnTouch : MonoBehaviour
         StartCoroutine(CameraShake());
 
         objectsActivated = true;
+
+        
     }
 
     IEnumerator CameraShake()
