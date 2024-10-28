@@ -26,6 +26,9 @@ public class ActivateOnTouch : MonoBehaviour
     // Référence au GameObject "Band" avec le composant Animation
     public GameObject band;
 
+    // Référence au GameObject "Player" avec le composant Animation
+    public GameObject player;
+
     void Start()
     {
         if (mainCamera == null)
@@ -120,10 +123,19 @@ public class ActivateOnTouch : MonoBehaviour
                 bandAnimation.enabled = true; // Activer le composant Animation
                 bandAnimation.Play("Band_Anim"); // Jouer l'animation "Band_Anim"
             }
-            else
+           
+        }
+
+        // Désactiver le composant Animation de "Player"
+        if (player != null)
+        {
+            Animation Idle = player.GetComponent<Animation>();
+            if (Idle != null)
             {
-                Debug.LogError("Le composant Animation est manquant sur le GameObject 'Band'.");
+                Idle.enabled = false; // Désactiver le composant Animation
+            
             }
+
         }
     }
 

@@ -119,6 +119,29 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &122302975 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2563617542826300885, guid: f9291961a17887e4bb32c488ce5f6210,
+    type: 3}
+  m_PrefabInstance: {fileID: 703456875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!111 &122302981
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 122302975}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 0ca38001d197cfa40856cf126ec85baa, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 0ca38001d197cfa40856cf126ec85baa, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
 --- !u!1 &153453282
 GameObject:
   m_ObjectHideFlags: 0
@@ -25536,7 +25559,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2563617542826300885, guid: f9291961a17887e4bb32c488ce5f6210,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 122302981}
   m_SourcePrefab: {fileID: 100100000, guid: f9291961a17887e4bb32c488ce5f6210, type: 3}
 --- !u!1 &705507993
 GameObject:
@@ -26817,6 +26844,7 @@ MonoBehaviour:
   playParticles: {fileID: 252608091}
   playParticles2: {fileID: 430138043}
   band: {fileID: 661614995}
+  player: {fileID: 122302975}
 --- !u!23 &1129984926
 MeshRenderer:
   m_ObjectHideFlags: 0
