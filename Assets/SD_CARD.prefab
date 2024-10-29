@@ -135,8 +135,8 @@ Transform:
   m_GameObject: {fileID: 551884396113233579}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.4999695, y: 7.1879, z: 15.9}
-  m_LocalScale: {x: -83.39911, y: -90.02727, z: -2.3837624}
+  m_LocalPosition: {x: -1.0267, y: 7.1879, z: 15.9}
+  m_LocalScale: {x: -88.03919, y: -90.02727, z: -2.3837624}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7946608227566363759}
@@ -11074,8 +11074,8 @@ Transform:
   m_GameObject: {fileID: 5428931030737706724}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000002078712, y: -0.70710796, z: 0.7071057, w: 0.0000021234155}
-  m_LocalPosition: {x: -0.4, y: -49.4, z: 17.1}
-  m_LocalScale: {x: 9.3164625, y: 0.702976, z: 1.534434}
+  m_LocalPosition: {x: -1.9, y: -127, z: 17}
+  m_LocalScale: {x: 13.54099, y: 1.0217388, z: 2.2302196}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7946608227566363759}
@@ -21489,8 +21489,8 @@ Transform:
   m_GameObject: {fileID: 8293867399100400937}
   serializedVersion: 2
   m_LocalRotation: {x: 0.000002078712, y: -0.70710796, z: 0.7071057, w: 0.0000021234155}
-  m_LocalPosition: {x: -0.5, y: 61.6, z: 17.09999}
-  m_LocalScale: {x: 8.334183, y: 2.5111954, z: 6.2350163}
+  m_LocalPosition: {x: -0.12346, y: 132.1, z: 17.1}
+  m_LocalScale: {x: 12.32393, y: 3.7133567, z: 9.219848}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7946608227566363759}
@@ -21997,7 +21997,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 26f2018cce80386429056c5c886f35c6, type: 2}
+      objectReference: {fileID: 2100000, guid: 28b5d31e78a8bc24eae58884ee243cbe, type: 2}
     - target: {fileID: -1806680513116206669, guid: eb672897335c93d4aa710153f84235c3,
         type: 3}
       propertyPath: m_Materials.Array.size
@@ -22007,7 +22007,7 @@ PrefabInstance:
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: 28b5d31e78a8bc24eae58884ee243cbe, type: 2}
+      objectReference: {fileID: 2100000, guid: 26f2018cce80386429056c5c886f35c6, type: 2}
     - target: {fileID: -1806680513116206669, guid: eb672897335c93d4aa710153f84235c3,
         type: 3}
       propertyPath: 'm_Materials.Array.data[1]'
@@ -22027,6 +22027,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Card (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865064391339405807, guid: eb672897335c93d4aa710153f84235c3,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.849
+      objectReference: {fileID: 0}
+    - target: {fileID: 4865064391339405807, guid: eb672897335c93d4aa710153f84235c3,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.145
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
