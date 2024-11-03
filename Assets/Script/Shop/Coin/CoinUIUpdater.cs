@@ -12,7 +12,7 @@ public class CoinUIUpdater : MonoBehaviour
 
     public void UpdateCoinText()
     {
-        coinText.text = "Coins : " + Game_Manager.Instance.GetTotalCoins().ToString();
+        coinText.text = " " + Game_Manager.Instance.GetTotalCoins().ToString();
     }
 
     // Si vous voulez mettre à jour le texte à chaque frame (ce n'est pas optimal)

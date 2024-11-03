@@ -38,6 +38,6 @@ public class Coin : MonoBehaviour
 
     void UpdateCoinText()
     {
-        coinText.text = "Coins : " + Game_Manager.Instance.GetTotalCoins().ToString();
+        coinText.text = " " + Game_Manager.Instance.GetTotalCoins().ToString();
     }
 }

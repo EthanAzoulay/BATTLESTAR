@@ -44,7 +44,7 @@ public class InstantiateOnClick : MonoBehaviour
                     {
                         // Instancie les GameObjects aux positions paramétrées
                         instanceB = Instantiate(gameObjectB, instantiatePositionB, Quaternion.identity);
-                        instanceC = Instantiate(gameObjectC, instantiatePositionC, Quaternion.Euler(-90, 0, 0));
+                        instanceC = Instantiate(gameObjectC, instantiatePositionC, Quaternion.Euler(90, 0, -900));
                         instanceD = Instantiate(gameObjectD, instantiatePositionD, Quaternion.Euler(-90, 0, 0));
 
                         // Démarre l'animation de scale pour l'instanceB
