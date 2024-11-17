@@ -30,14 +30,14 @@ public class Spawner_Asteroids : MonoBehaviour
     void Start()
     {
         // Initialisation de spawnRate avec une valeur aléatoire entre 0.1 et 0.5
-        spawnRate = Random.Range(0.1f, 0.5f);
+        //spawnRate = Random.Range(0.1f, 0.5f);
 
         // Appliquez la probabilité de spawn augmentée
-        float increaseAmount = Game_Manager.Instance.GetAsteroidSpawnProbabilityIncrease();
-        if (increaseAmount > 0)
-        {
-            IncreaseSpawnProbability(2, increaseAmount);
-        }
+        //float increaseAmount = Game_Manager.Instance.GetAsteroidSpawnProbabilityIncrease();
+        //if (increaseAmount > 0)
+        //{
+        //    IncreaseSpawnProbability(2, increaseAmount);
+        //}
     }
 
     void Update()

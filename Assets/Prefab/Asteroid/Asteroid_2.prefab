@@ -74,10 +74,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c104d80eecbe85a41a7db5f91f9c0873, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  minSpeed: 2
-  maxSpeed: 5
-  initialMinSpeed: 2
-  initialMaxSpeed: 5
+  minSpeed: 1
+  maxSpeed: 2
+  initialMinSpeed: 1
+  initialMaxSpeed: 2
 --- !u!65 &8482720674190346308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -254,6 +254,9 @@ MonoBehaviour:
   minScale: 0.1
   maxScale: 0.3
   coinsReward: 0
+  explosionParticles: {fileID: 0}
+  vfx: {fileID: 0}
+  destroyDelay: 0.01
 --- !u!114 &1045280964619962352
 MonoBehaviour:
   m_ObjectHideFlags: 0
