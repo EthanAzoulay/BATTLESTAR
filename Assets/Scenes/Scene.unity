@@ -25556,6 +25556,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6168539857889606887, guid: f9291961a17887e4bb32c488ce5f6210,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 7244731620635751786, guid: dd43ab41353a22140808f77b6ca1155d,
+        type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26622,7 +26628,7 @@ Transform:
   m_GameObject: {fileID: 993108195}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -20.38573, y: -22.317076, z: 101.651596}
+  m_LocalPosition: {x: -20.38573, y: -22.317076, z: 56.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26644,15 +26650,7 @@ MonoBehaviour:
   - prefab: {fileID: 9218707311433742470, guid: 5d210a4e8de2dcc4482b19460ce11fa7,
       type: 3}
     spawnProbability: 5
-  - prefab: {fileID: 663102033479752326, guid: 01ead5fd83a7ec846bc332d4f32ef79e, type: 3}
-    spawnProbability: 0.5
-  - prefab: {fileID: 9218707311433742470, guid: 1619622659991044e857ac5901d42bea,
-      type: 3}
-    spawnProbability: 0.5
-  - prefab: {fileID: 5389014498761406001, guid: 5d908ab21fd1ae840825ee8d0748deb6,
-      type: 3}
-    spawnProbability: 0.1
-  spawnRate: 0.1
+  spawnRate: 0.2
   xRange: {x: -2, y: 2}
   yRange: {x: -4.5, y: 4.5}
   portalXRange: {x: -0.2, y: 2}
